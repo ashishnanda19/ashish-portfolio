@@ -20,16 +20,15 @@ const projects = [
     demoUrl: "https://ytclonefrontendweb.vercel.app/",
     githubUrl: "https://github.com/ashishnanda19/YouTube-Clone",
   },
-  // {
-  //   id: 3,
-  //   title: "E-commerce Platform",
-  //   description:
-  //     "Full-featured e-commerce platform with user authentication and payment processing.",
-  //   image: "/projects/project3.png",
-  //   tags: ["React", "Node.js", "Stripe"],
-  //   demoUrl: "#",
-  //   githubUrl: "#",
-  // },
+  {
+    id: 3,
+    title: "Personal Portfolio",
+    description: "A responsive portfolio built with React, Tailwind, and Vite, featuring Home, About, Skills, Project mode and a contact section. Deployed on Vercel.",
+    image: "/projects/Project3.jpg",
+    tags: ["Vite", "React", "Tailwind CSS", "HTML", "CSS"],
+    demoUrl: "https://ashish-nanda.vercel.app/",
+    githubUrl: "https://github.com/ashishnanda19/ashish-portfolio",
+  },
 ];
 
 export const ProjectsSection = () => {
