@@ -3,6 +3,24 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "University Management System",
+    description: "This project is a University Management System with three user panels: Admin, Faculty, and Student. The system is built using PHP, HTML, CSS, JavaScript, and MySQL.",
+    image: "/projects/Project4.jpg",
+    tags: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+    demoUrl: "",
+    githubUrl: "https://github.com/ashishnanda19/ums-project",
+  },
+  {
+    id: 2,
+    title: "Personal Portfolio",
+    description: "A responsive portfolio built with React, Tailwind, and Vite, featuring Home, About, Skills, Project mode and a contact section. Deployed on Vercel.",
+    image: "/projects/Project3.jpg",
+    tags: ["Vite", "React", "Tailwind CSS", "HTML", "CSS"],
+    demoUrl: "https://ashish-nanda.vercel.app/",
+    githubUrl: "https://github.com/ashishnanda19/ashish-portfolio",
+  },
+  {
+    id: 3,
     title: "SpeedZ - Test Your Typing Speed",
     description: "A simple and modern typing speed test application built with HTML, CSS, and JavaScript. Test and improve your typing speed with different modes and time limits.",
     image: "/projects/Project1.png",
@@ -11,7 +29,7 @@ const projects = [
     githubUrl: "https://github.com/ashishnanda19/SpeedZ",
   },
   {
-    id: 2,
+    id: 4,
     title: "YouTube Clone",
     description:
       "This is a simple frontend clone of YouTube built using only HTML and CSS. The project replicates the basic layout and design of YouTube's homepage, focusing on responsiveness and styling.",
@@ -20,15 +38,7 @@ const projects = [
     demoUrl: "https://ytclonefrontendweb.vercel.app/",
     githubUrl: "https://github.com/ashishnanda19/YouTube-Clone",
   },
-  {
-    id: 3,
-    title: "Personal Portfolio",
-    description: "A responsive portfolio built with React, Tailwind, and Vite, featuring Home, About, Skills, Project mode and a contact section. Deployed on Vercel.",
-    image: "/projects/Project3.jpg",
-    tags: ["Vite", "React", "Tailwind CSS", "HTML", "CSS"],
-    demoUrl: "https://ashish-nanda.vercel.app/",
-    githubUrl: "https://github.com/ashishnanda19/ashish-portfolio",
-  },
+  
 ];
 
 export const ProjectsSection = () => {
