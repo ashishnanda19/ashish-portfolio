@@ -142,7 +142,7 @@ export const ContactSection = () => {
                 <a href="https://github.com/ashishnanda19" target="_blank" className="text-foreground/80 hover:text-primary transition-colors">
                   <Github />
                 </a>
-                <a href="https://leetcode.com/u/irunforloops/" target="_blank" className="text-foreground/80 hover:text-primary transition-colors">
+                <a href="https://leetcode.com/u/BitWiseNanda/" target="_blank" className="text-foreground/80 hover:text-primary transition-colors">
                   <LeetCodeIcon />
                 </a>
                 <a href="https://www.instagram.com/ayyashtrash/" target="_blank" className="text-foreground/80 hover:text-primary transition-colors">
