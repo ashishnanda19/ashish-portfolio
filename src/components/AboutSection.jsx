@@ -16,7 +16,7 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-            I'm a second-year CS student at Manipal University Jaipur who codes by day and plays guitar by night. I build full-stack web apps, grind LeetCode for fun, and occasionally debug with emotional support from my music.
+            I'm a third-year CS student at Manipal University Jaipur who codes by day and plays guitar by night. I build full-stack web apps, grind LeetCode for fun, and occasionally debug with emotional support from my music.
             </p>
 
             <p className="text-muted-foreground">
