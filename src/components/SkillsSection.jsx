@@ -38,13 +38,13 @@ const ReactIcon = () => (
   />
 );
 
-const TypeScriptIcon = () => (
-  <img 
-    src="https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000" 
-    alt="TypeScript"
-    className="w-14 h-14"
-  />
-);
+// const TypeScriptIcon = () => (
+//   <img 
+//     src="https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000" 
+//     alt="TypeScript"
+//     className="w-14 h-14"
+//   />
+// );
 
 const TailwindIcon = () => (
   <img 
@@ -54,13 +54,13 @@ const TailwindIcon = () => (
   />
 );
 
-const NextIcon = () => (
-  <img 
-    src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" 
-    alt="Next.js"
-    className="w-14 h-14"
-  />
-);
+// const NextIcon = () => (
+//   <img 
+//     src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" 
+//     alt="Next.js"
+//     className="w-14 h-14"
+//   />
+// );
 
 const NodeIcon = () => (
   <img 
@@ -85,6 +85,15 @@ const MongoDBIcon = () => (
     className="w-14 h-14"
   />
 );
+
+const RedisIcon = () => (
+  <img 
+    src="https://img.icons8.com/?size=100&id=38561&format=png&color=000000" 
+    alt="Redis"
+    className="w-14 h-14"
+  />
+);
+
 
 const MySQLIcon = () => (
   <img 
@@ -148,20 +157,39 @@ const VercelIcon = () => (
   </svg>
 );
 
+const AWSIcon = () => (
+  <img 
+    src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000" 
+    alt="AWS"
+    className="w-14 h-14"
+  />
+);
+
+const PostmanIcon = () => (
+  <img 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" 
+    alt="Postman"
+    className="w-14 h-14"
+  />
+);
+
+
+
 const skills = {
   frontend: [
     { name: "HTML", icon: <HTMLIcon /> },
     { name: "JavaScript", icon: <JavaScriptIcon /> },
     { name: "React", icon: <ReactIcon /> },
-    { name: "TypeScript", icon: <TypeScriptIcon /> },
+    // { name: "TypeScript", icon: <TypeScriptIcon /> },
     { name: "Tailwind CSS", icon: <TailwindIcon /> },
-    { name: "Next.js", icon: <NextIcon /> },
+    // { name: "Next.js", icon: <NextIcon /> },
     { name: "Vite", icon: <ViteIcon /> },
   ],
   backend: [
     { name: "Node.js", icon: <NodeIcon /> },
     { name: "Express", icon: <ExpressIcon /> },
     { name: "MongoDB", icon: <MongoDBIcon /> },
+    { name: "Redis", icon: <RedisIcon /> },
     { name: "MySQL", icon: <MySQLIcon /> },
   ],
   tools: [
@@ -170,6 +198,8 @@ const skills = {
     { name: "Git", icon: <GitIcon /> },
     { name: "VSCode", icon: <VSCodeIcon /> },
     { name: "Vercel", icon: <VercelIcon /> },
+    { name: "AWS", icon: <AWSIcon /> },
+    { name: "Postman", icon: <PostmanIcon /> },
   ],
 };
 
