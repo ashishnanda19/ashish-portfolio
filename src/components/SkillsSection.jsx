@@ -173,6 +173,79 @@ const PostmanIcon = () => (
   />
 );
 
+// ML & AI Icons
+const NumPyIcon = () => (
+  <img 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" 
+    alt="NumPy"
+    className="w-14 h-14"
+  />
+);
+
+const PandasIcon = () => (
+  <img 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" 
+    alt="Pandas"
+    className="w-14 h-14"
+  />
+);
+
+const MatplotlibIcon = () => (
+  <img 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" 
+    alt="Matplotlib"
+    className="w-14 h-14"
+  />
+);
+
+const SeabornIcon = () => (
+  <img 
+    src="https://logo.svgcdn.com/logos/seaborn-icon.svg" 
+    alt="Seaborn"
+    className="w-14 h-14"
+  />
+);
+
+const ScikitLearnIcon = () => (
+  <img 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
+    alt="Scikit-learn"
+    className="w-14 h-14"
+  />
+);
+
+const TensorFlowIcon = () => (
+  <img 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" 
+    alt="TensorFlow"
+    className="w-14 h-14"
+  />
+);
+
+const KerasIcon = () => (
+  <img 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" 
+    alt="Keras"
+    className="w-14 h-14"
+  />
+);
+
+const AnacondaIcon = () => (
+  <img 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" 
+    alt="Anaconda"
+    className="w-14 h-14"
+  />
+);
+
+const GoogleColabIcon = () => (
+  <img 
+    src="https://img.icons8.com/color/256/google-colab.png" 
+    alt="Google Colab"
+    className="w-14 h-14"
+  />
+);
+
 
 
 const skills = {
@@ -201,9 +274,20 @@ const skills = {
     { name: "AWS", icon: <AWSIcon /> },
     { name: "Postman", icon: <PostmanIcon /> },
   ],
+  "ml-ai": [
+    { name: "NumPy", icon: <NumPyIcon /> },
+    { name: "Pandas", icon: <PandasIcon /> },
+    { name: "Matplotlib", icon: <MatplotlibIcon /> },
+    { name: "Seaborn", icon: <SeabornIcon /> },
+    { name: "Scikit-learn", icon: <ScikitLearnIcon /> },
+    { name: "TensorFlow", icon: <TensorFlowIcon /> },
+    { name: "Keras", icon: <KerasIcon /> },
+    { name: "Anaconda", icon: <AnacondaIcon /> },
+    { name: "Google Colab", icon: <GoogleColabIcon /> },
+  ],
 };
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "frontend", "backend", "tools", "ml-ai"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -235,6 +319,8 @@ export const SkillsSection = () => {
         return "bg-[hsla(222,47%,8%,0.3)]";
       case "tools":
         return "bg-[hsla(222,47%,8%,0.3)]";
+      case "ml-ai":
+        return "bg-[hsla(222,47%,8%,0.3)]";
       default:
         return "bg-[hsla(222,47%,8%,0.3)]";
     }
@@ -243,7 +329,8 @@ export const SkillsSection = () => {
   const allSkills = [
     ...skills.frontend,
     ...skills.backend,
-    ...skills.tools
+    ...skills.tools,
+    ...skills["ml-ai"]
   ];
 
   return (
@@ -273,7 +360,7 @@ export const SkillsSection = () => {
                   : "bg-secondary/30 text-foreground hover:bg-secondary/40 hover:shadow-md hover:scale-105 hover:bg-secondary/50"
               )}
             >
-              <span className="relative z-10">{category}</span>
+              <span className="relative z-10">{category === "ml-ai" ? "ML & AI" : category}</span>
               <span className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </button>
           ))}

@@ -3,7 +3,26 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Vercel Clone (v2.0)",
+    title: "InvoSync",
+    description: "InvoSync is an AI-powered invoice and purchase order reconciliation system that uses Tesseract OCR and RapidFuzz to detect, extract, and compare data from scanned invoices and purchase orders. It automatically highlights mismatches, corrects inconsistencies, and exports clean, standardized results — saving hours of manual verification work.",
+    image: "/projects/Project8.png",
+    tags: ["React.js", "Vite", "Flask", "Python", "Tesseract OCR", "RapidFuzz", "Pandas", "Tailwind CSS"],
+    demoUrl: "https://www.youtube.com/watch?v=r7-kpqDxxr4",
+    githubUrl: "https://github.com/ashishnanda19/InvoSync",
+  },
+  {
+    id: 2,
+    title: "SafeTrail",
+    description: "A comprehensive travel safety platform that combines web applications, mobile apps, and machine learning to provide real-time threat detection and emergency response for travellers. SafeTrail integrates blockchain-based digital identity verification, location tracking, and AI-powered risk assessment to ensure traveler safety.",
+    image: "/projects/Project7.png",
+    tags: ["React Native","React.js", "Node.js", "Express.js","Flask", "Socket.io", "MongoDB", "Tailwind CSS"],
+    demoUrl: "https://www.youtube.com/watch?v=jbg5iuaavkU",
+    githubUrl: "https://github.com/ashishnanda19/SafeTrail",
+  },
+
+  {
+    id: 3,
+    title: "Vercel Clone",
     description: "Built a Vercel-like deployment platform that automates GitHub-integrated builds with Docker, orchestrated using AWS ECS/ECR, and serves static outputs via Nginx + S3. Implemented a real-time deployment pipeline using WebSockets and Redis for scalable, live build status updates.",
     image: "/projects/Project6.png",
     tags: ["System Design", "AWS ECS/ECR", "Docker", "Redis", "Node.js", "Nginx", "S3"],
@@ -11,7 +30,7 @@ const projects = [
     githubUrl: "https://github.com/ashishnanda19/Vercel-Clone-v2.0-",
   },
   {
-    id: 2,
+    id: 4,
     title: "IntelliCV",
     description: "An AI-powered Resume Analyzer with React, React Router, and Puter.js! Implement seamless auth, upload and store resumes, and match candidates to jobs using smart AI evaluations. Get custom feedback and ATS scores tailored to each listing—all wrapped in a clean, reusable UI.",
     image: "/projects/Project5.png",
@@ -20,7 +39,7 @@ const projects = [
     githubUrl: "https://github.com/ashishnanda19/IntelliCV",
   },
   {
-    id: 3,
+    id: 5,
     title: "University Management System",
     description: "This project is a University Management System with three user panels: Admin, Faculty, and Student. The system is built using PHP, HTML, CSS, JavaScript, and MySQL.",
     image: "/projects/Project4.jpg",
@@ -29,7 +48,7 @@ const projects = [
     githubUrl: "https://github.com/ashishnanda19/ums-project",
   },
   {
-    id: 4,
+    id: 6,
     title: "Personal Portfolio",
     description: "A responsive portfolio built with React, Tailwind, and Vite, featuring Home, About, Skills, Project mode and a contact section. Deployed on Vercel.",
     image: "/projects/Project3.jpg",
@@ -38,7 +57,7 @@ const projects = [
     githubUrl: "https://github.com/ashishnanda19/ashish-portfolio",
   },
   {
-    id: 5,
+    id: 7,
     title: "SpeedZ - Test Your Typing Speed",
     description: "A simple and modern typing speed test application built with HTML, CSS, and JavaScript. Test and improve your typing speed with different modes and time limits.",
     image: "/projects/Project1.png",
@@ -47,7 +66,7 @@ const projects = [
     githubUrl: "https://github.com/ashishnanda19/SpeedZ",
   },
   {
-    id: 6,
+    id: 8,
     title: "YouTube Clone",
     description:
       "This is a simple frontend clone of YouTube built using only HTML and CSS. The project replicates the basic layout and design of YouTube's homepage, focusing on responsiveness and styling.",
