@@ -86,13 +86,13 @@ const MongoDBIcon = () => (
   />
 );
 
-const RedisIcon = () => (
-  <img 
-    src="https://img.icons8.com/?size=100&id=38561&format=png&color=000000" 
-    alt="Redis"
-    className="w-14 h-14"
-  />
-);
+// const RedisIcon = () => (
+//   <img 
+//     src="https://img.icons8.com/?size=100&id=38561&format=png&color=000000" 
+//     alt="Redis"
+//     className="w-14 h-14"
+//   />
+// );
 
 
 const MySQLIcon = () => (
@@ -262,7 +262,7 @@ const skills = {
     { name: "Node.js", icon: <NodeIcon /> },
     { name: "Express", icon: <ExpressIcon /> },
     { name: "MongoDB", icon: <MongoDBIcon /> },
-    { name: "Redis", icon: <RedisIcon /> },
+    // { name: "Redis", icon: <RedisIcon /> },
     { name: "MySQL", icon: <MySQLIcon /> },
   ],
   tools: [
